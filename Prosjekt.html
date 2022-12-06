@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Prosjekt.css">
+  <title>Prosjekt</title>
+</head> 
+<body>
+<div id="alt">
+<!--Hvis du ser roboten, så er det meninga den skal gå ut av bilde ved responsiv side, samme gjelder teksten for den,
+fordi den skal gjelde for en viss størrelse skjerm.-->
+
+    <div class="flex-container">
+        <div class="contact" style="font-size: 2vw" onclick="location.href='Kontakt.html'">Kontakt oss</div>
+        <div class="faq" style="font-size: 2vw" onclick="location.href='FAQ.html'">FAQ</div>
+        <div class="tomt" style="font-size:3vw">1</div>
+      <div class="topp" style="font-size: 2vw">Juleforbruk</div>
+      <div class="bruker" style="font-size: 2vw"><p><div class="popup1" onclick="myFunction()">Skaperne
+        <span class="popuptext1" id="myPopup1">Mathias og Steven</span>
+      </div></div>
+      <div class="do2" style="font-size: 2vw"><p><button id="doner">Donasjon</button></p></div></div> 
+    <div id="info" style="font-size:5vw"><hr>
+      Hvorfor er det viktig med en bærekraftig jul?
+      <hr></div>
+      <div class="lav5">
+        <h3 style="font-size: 2vw; max-width:100%;height:auto;">En bærekraftig jul er både viktig og nyttig. Julen er en av tidene vi kaster mest mat, og generelt
+        kaster mest. Det er derfor det er viktig at vi prøver å holde det så bærekraftig som mulig. Dette gjelder å kaste
+        mindre mat og sette i bruk andre bærekraft-tiltak i forhåndtil jorden. Hvis vi setter mål mot dette, å holde jula
+        bærekraftig, og kunne sette ned forbruket, så kan vi hjelpe miljøet og jorda mye. Og dette alt starter med deg alene.
+        Det er flere linker under hvor det er nyttige tips og info om hvordan akkurat du kan gjøre dette. Har du lyst til å 
+        føre juletradisjonen med trær og pynt videre? Da er dette tipsene og infoen du trenger for å sørge for at dette skjer.
+        Hjelp med å holde jula bærekraftig, hjelp med å holde jorda i livet. Lenker ligger under.
+          </h3></div>
+          <div id ="bilde">
+          <img src="Juletre1.webp" style="max-width:100%;height:auto;" alt="Juletre">
+          </div>
+          <div id="link">
+          <div class="topp1" style="font-size: 2vw"> Lenker</div>
+          <div class="midt1" onclick="location.href='Forbruk og miljø.html'" style="font-size:2vw">Hvordan påvirker forbruk miljø? </div>
+          <div class="midt2" onclick="location.href='Praktiske gaver.html'" style="font-size:2vw">Praktiske tips for mer bærekraftige gaver.</div>
+          <div class="midt3" onclick="location.href='Bærekraftig Jul.html'" style="font-size:2vw">Er det mulig å feire en bærekraftig jul?</div>
+          <div class="lav1" onclick="location.href='BærekraftigMatTre.html'" style="font-size:2vw">Hva med bærekraft knyttet til juletrær eller julematen?</div>
+          <div class="lav2" onclick="location.href='Matsvinn i jula.html'" style="font-size:2vw">Har vi mye matsvinn i Jula?</div>
+          <div class="lav3" onclick="location.href='ØkologiskFotavtrykk.html'" style="font-size:2vw">Hva er økologisk fotavtrykk?</div>
+          </div>
+    
+    <div id="bg-image"></div>
+      <div class="popup">
+          <button id="close" style="font-size:2vw">&times;</button>
+          <h2 style="font-size: 3vw">Ikke alle har råd i jula</h2>
+          <p style="font-size: 2vw">
+            Vil du hjelpe en familie i jula?
+          </p>
+          <div class="a" style="font-size: 2vw" onclick="location.href='https://www.spleis.no/jul-org'">Før meg dit
+      </div></div>
+<div class="popup4" onclick="myFunction4()" style="font-size: 1vw">Trenger du hjelp?
+  <div class="popuptext4" id="myPopup4">
+    <div id="figur23">
+      <div id="hele">
+        <div id="venstre-knott"></div><div id="høyre-knott"></div>
+        <div id="venstre-antenne"></div><div id="høyre-antenne"></div>
+        <div id="hode"></div>
+        <div id="venstre-øye"></div><div id="høyre-øye"></div>
+        <div id="midt-del" style="font-size:2vw">Jeg vet ikke<br> hvordan jeg hjelper...</div>
+        <div id="nedre-del"></div>
+        <div id="venstre-bein"></div><div id="høyre-bein"></div>
+        <div id="venstre-arm"></div><div id="høyre-arm"></div>
+        
+      </div></div>
+    </div></div>
+
+
+    <script>
+      window.addEventListener("load", function(){
+          setTimeout(
+              function open(event){
+                  document.querySelector(".popup").style.display = "block";
+              },10000)
+      });
+      document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+      });
+      const doner = document.querySelector("#doner");
+      doner.addEventListener("click", function(){
+        setTimeout(
+        function open(event){
+        document.querySelector(".popup").style.display = "block";
+      },300 )});
+      document.querySelector("#close").addEventListener("click", function(){
+          document.querySelector(".popup").style.display = "none";
+      });
+    function myFunction() {
+      var popup1 = document.getElementById("myPopup1");
+      popup1.classList.toggle("show1");
+    }
+    function myFunction4() {
+      var popup4 = document.getElementById("myPopup4");
+      popup4.classList.toggle("show4");
+    }
+function myFunction1() {
+var popup1 = document.getElementById("myPopup2");
+popup1.classList.toggle("show2");
+}
+    function myFunction1() {
+      var popup1 = document.getElementById("myPopup2");
+      popup1.classList.toggle("show2");
+    }
+        function myFunction() {
+          var popup1 = document.getElementById("myPopup1");
+          popup1.classList.toggle("show1");
+        }
+        
+</script>
+</div>
+</body>
+</html>

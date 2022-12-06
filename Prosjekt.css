@@ -1,0 +1,447 @@
+      body{ /*CSS-fil for Prosjekt*/
+      background:
+      radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+      radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+      radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+      radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+      radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+      radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+      radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+      radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+      linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+      linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+      background-color: #300;
+      background-size: 100px 100px;
+          } #alt{
+            max-width:100%;
+          } #link{
+            padding: 0.5%;
+    position: relative;
+  display: grid;
+          text-align:center;
+          grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+          grid-template-rows: repeat(auto-fit, minmax(50%, 1fr));
+          grid-template-areas: 
+            "t1 t1 t1" 
+            "m1 m2 m3"
+            "l1 l2 l3";
+        } #link > div {
+          border: 1px solid lightgreen;
+          background-color:darkgreen;
+          height:100%;
+        }
+        .topp1  { grid-area : t1; 
+          background-image: url("sky.jpg");
+        color:lightgreen;}
+        .midt1 { grid-area : m1; 
+          background-image: url("jorda.jpg");
+          cursor: pointer;
+          display: block;
+      width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      color:yellow;
+      padding: 2% 0;}
+        .midt2 { grid-area : m2; 
+          background-image: url("Praktiskegaver2.avif");
+          cursor: pointer;
+          display: block;
+          width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      color:yellow;
+      padding: 2% 0;}
+        .midt3 { grid-area : m3; 
+          background-image: url("bærekraftigjulb.jpg");
+          cursor: pointer;
+          display: block;
+          width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      color:yellow;
+      padding: 2% 0;}
+        .lav1  { grid-area : l1; 
+          background-image: url("bærekraftigmattreb.jfif");
+          cursor: pointer;
+          display: block;
+          width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      color:yellow;
+      padding: 2% 0;}
+        .lav2  { grid-area : l2;
+          background-image: url("Matsvinn.jfif");
+          cursor: pointer;
+          display: block;
+          width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 2% 0;
+      color:yellow;}
+        .lav3  { grid-area : l3;
+          background-image: url("ØkologFot.webp");
+          cursor: pointer;
+          display: block;
+          width: 100%;
+      position: relative;
+      margin: 1% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      color: #ffffff;
+      text-decoration: none;
+      color:yellow;
+      padding: 2% 0;}
+
+        @media screen and (max-width: 800px) {
+    .topp1, .midt1, .midt2, .mit3, .lav1, .lav2, .lav3 {
+      width: 100%
+    }}
+    .lav5{
+      padding: 1%;
+      max-width:80%;
+      color:lightgreen;
+    }
+    #info{
+      padding: 1%;
+      color:lightgreen;
+    } #bilde{
+      padding: 0.5%;
+    }
+
+    .popup1 {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      color:red;
+    }
+    .popup1 .popuptext1 {
+      top:100%;
+      visibility: hidden;
+      width: 250%;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 4%;
+      padding: 40% 0; 
+      position: absolute;
+      margin-bottom: -800px;
+      z-index: 1;
+      left: 50%;
+      margin-left: -125%;
+    }
+    .popup1 .show1 {
+      visibility: visible;
+    }
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+  .popup{
+    background-image: url("hjelpjul.jpg"); 
+    background-color:grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:lightgreen;
+      width: 75%;
+      padding: 2% 2%;
+      position: absolute;
+      margin-bottom: -800px;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 8%;
+      border: 10px solid yellow;
+      font-family: "Poppins",sans-serif;
+      display: none; 
+      text-align: center;
+  }
+  .popup button{
+      display: block;
+      margin:  0 0 20% auto;
+      background-color: transparent;
+      color: #ffffff;
+      background: #03549a;
+      border-radius: 100%;
+      width: 3%;
+      height: auto;
+      border: none;
+      outline: none;
+      cursor: pointer;
+  }
+  .popup h2{
+    margin-top: -20%;
+  }
+  .popup p{
+      font-size: 14%;
+      text-align: center;
+      margin: 10% 0;
+      line-height: 25%;
+  }
+  .a{
+      display: block;
+      width: 75%;
+      position: relative;
+      margin: 10% auto;
+      text-align: center;
+      background-color: #0f72e5;
+      border-radius: 50%;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 2% 0;
+      cursor: pointer;
+  } 
+
+        * {
+          box-sizing: border-box;
+        }
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          background-color:green;
+          justify-items:center;
+          align-items:center;
+        }
+        .topp {
+          flex: 70%;
+          color:red;
+        }
+        .faq{
+            color:red;
+            cursor: pointer;
+        }
+        .bruker{
+            color:red;
+        }
+        .contact{
+            color: red;
+            flex:6%;
+            cursor: pointer;
+        }
+        .tomt{
+            color:green;
+        }
+        .do2{
+          color:red;
+          flex: 6%;
+        }
+        @media (max-width: 800px) {
+          .topp, .faq, .bruker, .contact, .tomt, .do2 {
+            flex: 100%;
+          }}
+        #doner{
+          color:red;
+          background-color:green;
+          border:none;
+          position:relative;
+          cursor: pointer;
+        }
+
+.popup4 {
+  position: relative;
+  cursor: pointer;
+  position:relative;
+  color:yellow;
+  margin-bottom: -800px;
+  top:-950px;
+  margin:0.5%;
+}
+.popup4 .popuptext4 {
+  visibility: hidden;
+}
+.popup4 .show4 {
+  visibility: visible;
+} 
+
+#figur23{
+    padding: 0.5%;
+display: grid;
+position: absolute;
+left:-20%;
+width:100%;
+  text-align:center;
+  grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50%, 1fr));
+  grid-template-areas: 
+    "k1 k2 k3" 
+    "a1 a2 a3"
+    "l1 l2 l3"
+    "s1 s2 s3"
+    "b1 b2 b3";
+} #venstre-knott { grid-area : k1; 
+    border-radius:100%;
+      background-color:blue;
+      height:10%;
+      width: 4%;
+      position: relative;
+      left: 61%;
+      transform: rotate(20deg);
+      top:-25%;
+} #høyre-knott { grid-area : k3; 
+    border-radius:100%;
+      background-color:blue;
+      height:10%;
+      width: 4%;
+      position: relative;
+      left: -21%;
+      transform: rotate(20deg);
+      top:-25%;
+} #venstre-antenne { grid-area : a1;
+      border-radius:20%;
+      background-color: blue;
+      height: 30%;
+      width: 0.5%;
+      position: relative;
+      left: 60%;
+      transform: rotate(-20deg);
+      top:-20%;
+  } #høyre-antenne { grid-area : a3;
+      border-radius:20%;
+      background-color: blue;
+      height: 30%;
+      width: 0.5%;
+      position: relative;
+      left: -20%;
+      transform: rotate(20deg);
+      top:-20%;
+  } #hode { grid-area : l2; 
+  position:relative;
+  left:70%;
+  top:16%;
+  transform: translate(-50%, -50%);
+  height: 55%;
+  width: 16%;
+  border-radius: 150px 150px 0 0;
+  background-color: blue;
+} #venstre-øye{ grid-area : l1; 
+    border-radius: 100%;
+    background-color:red;
+    height:10%;
+    width: 3%;
+    position: relative;
+    left: 65%;
+    top: -30%;
+} #høyre-øye{ grid-area : l3; 
+    border-radius: 100%;
+    background-color:red;
+    height: 10%;
+    width: 3%;
+    position: relative;
+    left: 70%;
+    top: -40%;
+} #midt-del{ grid-area: s2;
+      background-color:blue;
+      height: 70%;
+      width: 16%;
+      position: relative;
+      left: 62%;
+      top:-30%;
+  } #nedre-del{ grid-area: b2;
+      border-radius:20%;
+      background-color:blue;
+      height: 55%;
+      width: 16%;
+      position: relative;
+      left: 62%;
+      top: -40%;
+  } #venstre-arm{ grid-area: s1;
+      border-radius:25%;
+      background-color:blue;
+      height:150px;
+      width: 4%;
+      position: relative;
+      left: 54%;
+      transform: rotate(-27deg);
+      top: -195%;
+  } #høyre-arm{ grid-area: s3;
+      border-radius:25%;
+      background-color:blue;
+      height:150px;
+      width: 4%;
+      position: relative;
+      left: -14%;
+      transform: rotate(27deg);
+      top: -195%;
+  } #venstre-bein{ grid-area: b1;
+      border-radius:20%;
+      background-color:blue;
+      height: 150px;
+      width: 4%;
+      position: relative;
+      left: 62%;
+      transform: rotate(20deg);
+      top: -70%;
+  } #høyre-bein{ grid-area: b3;
+      border-radius:20%;
+      background-color:blue;
+      height: 150px;
+      width: 4%;
+      position: relative;
+      left: -22%;
+      transform: rotate(-20deg);
+      top: -70%;
+  }   
+  #venstre-arm {float:left;}
+#høyre-arm {float:right;}
+#venstre-antenne {float:left;}
+#høyre-antenne {float:right;}
+#venstre-bein {float:left;}
+#høyre-bein {float:right;}
+#venstre-knott {float:left;}
+#høyre-knott {float:right;}
+
+
+.popup2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  left:77%;
+  top:-800px;
+  background-color:blue;
+  color:lightgreen;
+  max-width:50%;
+}
+.popup2 .popuptext2 {
+  visibility: hidden;
+  text-align: center;
+  padding: 30% 0; 
+  position: absolute;
+  z-index: 1;
+  margin-left: -100%;
+  margin-bottom: -800px;
+  max-width:10%;
+  border: 1px solid lightgreen;
+  background-color:red;
+  color:lightgreen;
+  border-radius:25%;
+  top:-18px;
+}
+.popup2 .show2 {
+  visibility: visible;
+}
+#canvasWrapper {
+	max-width: initial;
+}

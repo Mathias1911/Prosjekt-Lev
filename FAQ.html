@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FAQ.css">
+    <title>Frequently Asked Questions</title>
+</head>
+<body>
+        <div class="faq-heading" style="font-size:3vw">Spørsmål, halveis</div>
+        <div class="faq-container">
+        <div class="faq-one">
+        <div class="faq-page" style="font-size:2vw">Var det enkelt å lage nettsiden?</div>
+        <div class="faq-body">
+        <p style="font-size:1.5vw">Nei det tok hersens lang tid og det var forferdelig. Never again for å si det sånn.
+            Tok tid og søking. Never again.
+        </p>
+        </div></div>
+        <hr class="hr-line">
+        <div class="faq-two">
+        <div class="faq-page" style="font-size:2vw">Angrer vi på hvordan vi bygde den opp?</div>
+        <div class="faq-body">
+        <p style="font-size:1.5vw">Vi angrer. Tok way to long. Men den ble bra. Så det er good.</p>
+        </div></div>
+        <hr class="hr-line">
+        <div class="faq-three">
+<div class="faq-page" style="font-size:2vw">Var dette bare for å ha en kode for FAQ?</div>
+        <div class="faq-body">
+        <p style="font-size:1.5vw">Ja. Ja det var det. Ser mye bedre ut+er en til nettside som kobles til så det er good. 
+            Og ingen har spurt oss spørsmål :(
+        </p>
+        </div></div>
+    </div>
+    <div id="tilbake"><a href="Prosjekt.html" style="font-size: 3vw">Tilbake til Jule-siden</a></div>
+
+<script>
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}</script>
+</body>
+</html>
